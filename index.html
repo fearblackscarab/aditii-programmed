@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aditii</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section class="head-section1">
+            <div class="container">
+                <div class="row">
+                    <h1 class="logo col-3">Aditii</h1>
+                    <div class="search-content col-5">
+                        <input type="search" class="search" id="searchBar" placeholder="Search">
+                        <svg class="icon icon-search">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </div>
+                    <div class="cart-info col-4">
+                        <svg class="icon icon-cart col-6">
+                            <use xlink:href="#icon-cart"></use>
+                        </svg>
+                        <div class="cart-total-display col-6">
+                            <p class="count-display" id="countDisplay">0 Items</p>
+                            <p class="total-display" id="totalDisplay">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="head-section2">
+            <div class="container">
+                <div class="row">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-top-item nav-link">Home</a>
+                        <a href="link" class="nav-top-item nav-link">Xbox Series X|S</a>
+                        <a href="" class="nav-top-item nav-link">Xbox one</a>
+                        <a href="" class="nav-top-item nav-link">Playstation 4</a>
+                        <a href="" class="nav-top-item nav-link">Playstation 5</a>
+                        <a href="" class="nav-top-item nav-link">Nintendo Switch</a>
+                        <a href="" class="nav-top-item nav-link">PC games</a>
+                        <a href="" class="nav-top-item nav-link">Pre-owned Games</a>
+                        <a href="" class="nav-top-item nav-link">Retro Gaming</a>
+                        <a href="" class="nav-top-item nav-link" id="checkout">Cart</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main" id="main">
+        <div class="product-page" id="productPage">
+            <section class="main1">
+                <div class="container">
+                    <div class="row justify-content-left">
+                        <!-- image of company advertisement -->
+                        <img src="media/company-advert.jpg" alt="companys advertisement"
+                            class="img-fluid fancy-image col-5" id="fancyImage">
+                        <div class="fancy-content col-4" id="fancyContent">
+                            <!-- some bs about membership bonuses -->
+                            <h3 class="ad-title">Join Now</h3>
+                            <p class="ad-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aspernatur
+                                blanditiis libero dicta eius quasi minima modi. Hic earum possimus facere aliquam,
+                                necessitatibus in quam tempore, accusamus assumenda esse quaerat amet!</p>
+                            <button class="join-cult btn btn-dark">Join us</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-header">
+                <div class="container">
+                    <h2 class="system-header">Choose your system</h2>
+                </div>
+            </section>
+            <section class="main2">
+                <div class="container">
+                    <div class="system-display row" id="systemDisplay">
+                        <!-- systems class to select from -->
+                        <div class="card-padding col-3 text-center">
+                            <div class="card system-card" id="xboxDisplay">
+                                <div class="img-container">
+                                    <div class="img-position">
+                                        <img src="media/xbox-logo.jpg" class="card-img-top system-image"
+                                            alt="Xbox selection image">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Xbox</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-padding col-3 text-center">
+                            <div class="card system-card" id="playstationDisplay">
+                                <div class="img-container">
+                                    <div class="img-position">
+                                        <img src="media/playstation-logo.jpg" class="card-img-top system-image"
+                                            alt="Playstation selection image">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Playstation</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-padding col-3 text-center">
+                            <div class="card system-card" id="nintendoDisplay">
+                                <div class="img-container">
+                                    <div class="img-position">
+                                        <img src="media/nintendo-logo.gif" class="card-img-top system-image"
+                                            alt="Nintendo selection image">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nintendo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-padding col-3 text-center">
+                            <div class="card system-card" id="pcDisplay">
+                                <div class="img-container">
+                                    <div class="img-position">
+                                        <img src="media/pc-logo.jpg" class="card-img-top system-image"
+                                            alt="PC selection image">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">PC</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="product-header">Games</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="main3">
+                <div class="container">
+                    <div class="product-display row justify-content-evenly" id="productDisplay">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="checkout-page d-none" id="checkoutPage">
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="bar-text">home &gt; Checkout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section checkout-section">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="checkout-header">Checkout</h2>
+                            <p class="checkout-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Aspernatur reiciendis officiis voluptatum quibusdam. Provident, ipsa?</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="checkout-item-count">
+                                <span id="checkoutItemCount"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table" id="table">
+
+                                <tr class="table-headers">
+                                    <td>Product name</td>
+                                    <td>Product code</td>
+                                    <td>Unit price</td>
+                                    <td>Quantity</td>
+                                    <td>Subtotal</td>
+                                </tr>
+                                <tbody id="tbody"></tbody>
+                                <!-- load items -->
+                                <tr class="totals" id="totals">
+                                    <td colspan="4">
+                                        <p class="total-subtotal" id="totalSubtotal">Subtotal</p>
+                                        <p class="total-shipping" id="totalShipping">delivery fee</p>
+                                        <p class="tax-total" id="taxTotal">Tax</p>
+                                        <p class="total-total" id="totalTotal">total</p>
+                                    </td>
+                                    <td class="total-values" id="totalValues">
+                                        <p class="subtotal-value" id="subtotalValue">0.00</p>
+                                        <p class="shipping-value" id="shippingValue">5.00</p>
+                                        <p class="tax-value" id="taxValue">0.00</p>
+                                        <p class="total-value">$<span id="totalValue">0.00</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-secondary confirm-button" id="confirmButton">Confirm order</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="single-page">
+            <div class="container">
+                <div class="single-item-page" id="singleItemPage">
+                <div class="row">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="media/Halo_Infinite.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="media/Halo_Infinite.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="media/Halo_Infinite.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div> -->
+
+            <!-- carousel -->
+            <!-- product-purchase-div -->
+            <!-- description -->
+            <!-- price/quantity -->
+            <!-- subtotal of price and quantity/buy button -->
+
+
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="lists">
+            <div class="inner">
+                <div class="links link1">
+                    <h2 class="list-name">featured sale</h2>
+                    <ul class="list list1">
+                        <li class="list-item list-item1"><a href="#link">Lorem.</a></li>
+                        <li class="list-item list-item2"><a href="#link">At?</a></li>
+                        <li class="list-item list-item3"><a href="#link">Est.</a></li>
+                        <li class="list-item list-item4"><a href="#link">Quidem?</a></li>
+                        <li class="list-item list-item5"><a href="#link">Ratione.</a></li>
+                        <li class="list-item list-item6"><a href="#link">Explicabo?</a></li>
+                        <li class="list-item list-item7"><a href="#link">Accusamus!</a></li>
+                        <li class="list-item list-item8"><a href="#link">Accusantium.</a></li>
+                    </ul>
+                </div>
+                <div class="links link2">
+                    <h2 class="list-name">mens store</h2>
+                    <ul class="list list2">
+                        <li class="list-item list-item1"><a href="#link">Lorem.</a></li>
+                        <li class="list-item list-item2"><a href="#link">Nisi?</a></li>
+                        <li class="list-item list-item3"><a href="#link">Adipisci?</a></li>
+                        <li class="list-item list-item4"><a href="#link">Esse!</a></li>
+                        <li class="list-item list-item5"><a href="#link">Amet.</a></li>
+                        <li class="list-item list-item6"><a href="#link">Sit!</a></li>
+                        <li class="list-item list-item7"><a href="#link">Obcaecati!</a></li>
+                        <li class="list-item list-item8"><a href="#link">Deserunt?</a></li>
+                    </ul>
+                </div>
+                <div class="links link3">
+                    <h2 class="list-name">womens store</h2>
+                    <ul class="list list3">
+                        <li class="list-item list-item1"><a href="#link">Lorem.</a></li>
+                        <li class="list-item list-item2"><a href="#link">Sed?</a></li>
+                        <li class="list-item list-item3"><a href="#link">Tempore.</a></li>
+                        <li class="list-item list-item4"><a href="#link">Consequatur?</a></li>
+                        <li class="list-item list-item5"><a href="#link">Ipsum.</a></li>
+                        <li class="list-item list-item6"><a href="#link">Non.</a></li>
+                        <li class="list-item list-item7"><a href="#link">Alias.</a></li>
+                        <li class="list-item list-item8"><a href="#link">Unde.</a></li>
+                    </ul>
+                </div>
+                <div class="links link4">
+                    <h2 class="list-name">quick links</h2>
+                    <ul class="list list4">
+                        <li class="list-item list-item1"><a href="#link">Lorem.</a></li>
+                        <li class="list-item list-item2"><a href="#link">Quod.</a></li>
+                        <li class="list-item list-item3"><a href="#link">Mollitia.</a></li>
+                        <li class="list-item list-item4"><a href="#link">Accusantium.</a></li>
+                        <li class="list-item list-item5"><a href="#link">Explicabo.</a></li>
+                        <li class="list-item list-item6"><a href="#link">Non.</a></li>
+                        <li class="list-item list-item7"><a href="#link">Libero.</a></li>
+                        <li class="list-item list-item8"><a href="#link">Odit.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="colophon">
+            <P class="colophon-text">Copyright &copy; 2021 Css Author</P>
+        </div>
+    </footer>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-cart" viewBox="0 0 25 25">
+                <path
+                    d="M9.375 22.656c0 1.294-1.049 2.344-2.344 2.344s-2.344-1.049-2.344-2.344c0-1.294 1.049-2.344 2.344-2.344s2.344 1.049 2.344 2.344z">
+                </path>
+                <path
+                    d="M25 22.656c0 1.294-1.049 2.344-2.344 2.344s-2.344-1.049-2.344-2.344c0-1.294 1.049-2.344 2.344-2.344s2.344 1.049 2.344 2.344z">
+                </path>
+                <path
+                    d="M25 12.5v-9.375h-18.75c0-0.863-0.7-1.563-1.563-1.563h-4.688v1.563h3.125l1.174 10.060c-0.715 0.573-1.174 1.453-1.174 2.44 0 1.726 1.399 3.125 3.125 3.125h18.75v-1.563h-18.75c-0.863 0-1.563-0.7-1.563-1.563 0-0.005 0-0.011 0-0.016l20.312-3.109z">
+                </path>
+            </symbol>
+            <symbol id="icon-search" viewBox="0 0 25 25">
+                <path
+                    d="M24.225 21.274l-5.922-5.036c-0.612-0.551-1.267-0.804-1.796-0.78 1.398-1.637 2.242-3.761 2.242-6.083 0-5.177-4.197-9.375-9.375-9.375s-9.375 4.197-9.375 9.375 4.197 9.375 9.375 9.375c2.322 0 4.446-0.844 6.083-2.242-0.025 0.529 0.228 1.183 0.78 1.796l5.036 5.922c0.862 0.958 2.271 1.039 3.13 0.18s0.779-2.268-0.18-3.13zM9.375 15.625c-3.452 0-6.25-2.798-6.25-6.25s2.798-6.25 6.25-6.25 6.25 2.798 6.25 6.25-2.798 6.25-6.25 6.25z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
