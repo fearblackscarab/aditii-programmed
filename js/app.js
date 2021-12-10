@@ -114,7 +114,6 @@ class Products {
         this.loadItems()
         this.checkout()
         this.goToItem()
-        // return subTimeQty,tax,shipping,itemCount,price,amount;
     }
     loop(){
             if(confirm("sure this isnt a scam?")){
@@ -163,7 +162,7 @@ class Products {
                     </div>
                     </div>`
         }
-        // if not these has ran dont
+
         xboxDisplay.addEventListener('click', () => {
             productDisplay.innerHTML = ''
             for (const key in this.inventory) {
@@ -254,10 +253,6 @@ class Products {
         let shippingValue = document.getElementById('shippingValue');
         let shipping = 5;
 
-        // if(){   
-
-        // }
-
             buyItem.addEventListener('click', () => {
                 for (const key in this.inventory) {
                     let item = this.inventory[key];
@@ -281,7 +276,7 @@ class Products {
                         tax = this.itemsCart.subTotal * 0.07;
                         taxValue.innerText = tax.toFixed(2);
                         totalValue.innerText = (this.itemsCart.subTotal + tax + shipping).toFixed(2);
-                        // if qty is > 0(item is added to cart)
+
                         if (item.qty > 1) {
                             let qtyInput = document.querySelectorAll('.qty-input-value');
                             let itemSubtotal = document.querySelectorAll('.item-subtotal')
@@ -364,7 +359,6 @@ class Products {
 
     }
     // individual product pages
-
     goToItem() {
         let buyItem = document.querySelectorAll('.buy-item');
         let productPage = document.getElementById('productPage');
