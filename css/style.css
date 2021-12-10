@@ -80,10 +80,6 @@ body{
     justify-content: right;
 }
 
-.cart-info:hover{
-    border: 1px solid black;
-}
-
 .icon-cart{
     margin-right: 5px;
     margin-top: 15px;
@@ -348,13 +344,16 @@ background-color: var(--primary);
 }
 
 .single-product-info{
-    margin: 0;
+    margin: auto 0;
     padding: 0;
-    display: inline-block;
 }
 
 .product-carousel{
     display: inline-block;
+}
+
+.buy-item{
+    margin: 20px 0;
 }
 
 /* Reusable checkout */
